@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify clone</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 <body>
     <div class="wrapper d-flex">
@@ -14,95 +16,128 @@
                <img src="img/Spotify.png" alt="">
               </div>
               <div class="box_home">
-                <div class="d-flex center_ai">
+                <div class="d-flex center_ai row_home">
                   <img src="img/home.png" alt="">
-                  <h4>Home</h4>
+                  <a href="#">Home</a>
                 </div>
-                <div class="d-flex center_ai mt_20">
+                <div class="d-flex center_ai mt_10 row_cerca">
                   <img src="img/search.png" alt="">
-                  <h4>Cerca</h4>
+                  <a href="#">Cerca</a>
                 </div>
-                <div class="d-flex center_ai mt_20">
+                <div class="d-flex center_ai mt_10 row_libro">
                   <img src="img/libreria.png" alt="">
-                  <h4>La Tua Libreria</h4>
+                  <a href="#">La tua libreria</a>
                 </div>
+              </div>
 
+              <div class="playlist mt_20">
+                <h4>PLAYLIST</h4>
+                <div class="d-flex center_ai mt_10">
+                  <i class="fas fa-plus-square"></i>
+                  <p>Crea Playlist</p>
+                </div>
+                <div class="lista_play">
+                <div class="column-flex">
+                  <a href="#">Nome Playlist</a>
+                  <a href="#">Nome Playlist</a>
+                  <a href="#">Nome Playlist</a>
+                  <a href="#">Nome Playlist</a>
+                  <a href="#">Nome Playlist</a>
+                  <a href="#">Nome Playlist</a>
+                  <a href="#">Nome Playlist</a>
+                </div>
+                </div>
 
               </div>
 
-
-
-
-
-
-
+              <div class="installa">
+                <div class="d-flex riga">
+                  <i class="far fa-arrow-alt-circle-down mb_10"></i>
+                  <a href="#">Installa app</a>
+                </div>
+                <div class="d-flex center_ai account">
+                  <img src="img/User Icon.png" alt=""class="mt_10 mb_10">
+                  <a href="#">John Doe</a>
+                </div>
+              </div>
             </aside>
 
             <section class="covers_section">
                 <div class="subscribe_banner d-flex upgrade-flex">
-                    <a href="#">Effettua L'Upgrade</a>
+                    <a href="#">EFFETTUA L'UPGRADE</a>
                 </div>
 
                 <nav class="covers_nav d-flex flex-wrap center-flex">
-                 <a href="#">In Evidenza</a>
-                 <a href="#">Podcast</a>
-                 <a href="#">Classifiche</a>
-                 <a href="#">Generi e Mood</a>
-                 <a href="#">Nuove Uscite</a>
-                 <a href="#">Scopri</a>
+                 <a href="#">IN EVIDENZA</a>
+                 <a href="#">PODCAST</a>
+                 <a href="#">CLASSIFICHE</a>
+                 <a href="#">GENERI E MOOD</a>
+                 <a href="#">NUOVE USCITE</a>
+                 <a href="#">SCOPRI</a>
                 </nav>
 
-                <h2>Recently played</h2>
+                <h2 class="mt_30 mb_30">Recently played</h2>
                 <div id="recently_played" class="d-flex flex-wrap">
-                    <div class="item">
-                      <img src="img/einaudi.jpeg" alt="">
-                      <h3>piccolo babbione</h3>
-                    </div>
-                    <div class="item">
-                      <img src="img/einaudi.jpeg" alt="">
-                      <h3>piccolo babbione</h3>
-                    </div>
-                    <div class="item">
-                      <img src="img/einaudi.jpeg" alt="">
-                      <h3>piccolo babbione</h3>
-                    </div>
-                    <div class="item">
-                      <img src="img/einaudi.jpeg" alt="">
-                      <h3>piccolo babbione</h3>
-                    </div>
-                    <div class="item">
-                      <img src="img/einaudi.jpeg" alt="">
-                      <h3>piccolo babbione</h3>
+                    <div class="item text-center">
+                      <img src="img/metal_lifting.jpg" alt="">
+                      <h4 class="mt_10 mb_10">Heavy Metal</h4>
+                      <h5>Subtitle</h5>
                     </div>
                     <div class="item text-center">
-                      <img src="img/einaudi.jpeg" alt="">
-                      <h3>piccolo babbione</h3>
+                      <img src="img/thinks.jpg" alt="">
+                      <h4 class="mt_10 mb_10">Stranger Thinks,Vol. 1(a Netflix Original Series Soundtrack)</h4>
+                      <h5>Kyle Dixon & Micheal Stein</h5>
+                    </div>
+                    <div class="item text-center">
+                      <img src="img/aquietplace.jpeg" alt="">
+                      <h4 class="mt_10 mb_10">A Quiet Place</h4>
+                      <h5>Subtitle</h5>
+                    </div>
+                    <div class="item text-center">
+                      <img src="img/split.jpeg" alt="">
+                      <h4 class="mt_10 mb_10">Split</h4>
+                      <h5>Subtitle</h5>
+                    </div>
+                    <div class="item text-center">
+                      <img src="img/image0.jpg" alt="">
+                      <h4 class="mt_10 mb_10">A cure for Wellness</h4>
+                      <h5>Subtitle</h5>
+                    </div>
+                    <div class="item text-center">
+                      <img src="img/sinister.jpeg" alt="">
+                      <h4 class="mt_10 mb_10">Sinister</h4>
+                      <h5>Subtitle</h5>
                     </div>
                 </div>
 
-                <h2>Creato per John Doe</h2>
-                <p>Più ascolti, più accurati sono i suggerimenti</p>
+                <div class="John_doe">
+                  <h2 class="mt_30 mb_10">Creato per John Doe</h2>
+                  <h5 class="mb_20">Più ascolti, più accurati sono i suggerimenti.</h5>
+                </div>
                 <div id="created_for" class="d-flex flex-wrap">
-                  <div class="item">
-                    <img src="img/einaudi.jpeg" alt="">
-                    <h3>piccolo babbione</h3>
+                  <div class="item text-center">
+                    <img src="img/radar.jpeg" alt="">
+                    <h4 class="mt_10">Release Radar</h4>
                   </div>
-                  <div class="item">
-                    <img src="img/einaudi.jpeg" alt="">
-                    <h3>piccolo babbione</h3>
+                  <div class="item text-center">
+                    <img src="img/mixdaily.jpeg" alt="">
+                    <h4 class="mt_10">Daily Mix 1</h4>
                   </div>
                 </div>
 
 
-                <h2>Artisti più popolari</h2>
+                <div class="John_doe">
+                  <h2 class="mt_30 mb_10">Artisti più popolari</h2>
+                  <h5 class="mb_20">Più ascolti, più accurati sono i suggerimenti.</h5>
+                </div>
                 <div id="popular" class="d-flex flex-wrap">
-                  <div class="item">
-                    <img src="img/einaudi.jpeg" alt="">
-                    <h3>piccolo babbione</h3>
+                  <div class="item text-center">
+                    <img src="img/youg.jpeg" alt="">
+                    <h4 class="mt_10">Lana del Rey</h4>
                   </div>
-                  <div class="item">
+                  <div class="item text-center">
                     <img src="img/einaudi.jpeg" alt="">
-                    <h3>piccolo babbione</h3>
+                    <h4 class="mt_10">Einaudi</h4>
                   </div>
                 </div>
 
@@ -110,8 +145,44 @@
             </section>
 
         </main>
-        <footer id="site_footer">
-            <div class="player">player</div>
+
+
+
+        <footer id="site_footer" class="disp_footer">
+        <div class="box_footer d-flex">
+          <div class="box_sinister d-flex center_ai">
+           <img src="img/sinister.jpeg" alt="">
+           <div class="pa">
+             <h5>Sinister</h5>
+             <h6>Brano Nome</h6>
+           </div>
+           <i class="far fa-heart pd_10"></i>
+           <i class="far fa-folder"></i>
+          </div>
+        </div>
+        <div class="box_footer box_play">
+          <div class="botton_play">
+            <i class="fas fa-random"></i>
+            <i class="fas fa-step-backward"></i>
+            <i class="far fa-play-circle"></i>
+            <i class="fas fa-step-forward"></i>
+            <i class="fas fa-redo"></i>
+          </div>
+          <div class="riprod">
+            <p>0:25</p>
+            <span style="width: 70%"></span>
+            <p>4:35</p>
+          </div>
+        </div>
+
+        <div class="box_footer d-flex ">
+          <div class="audio">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-tv"></i>
+          <i class="fas fa-volume-up"></i>
+          <span style="width: 20%"></span>
+          </div>
+        </div>
         </footer>
     </div>
 
